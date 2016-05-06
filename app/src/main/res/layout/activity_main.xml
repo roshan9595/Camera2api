@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.roshan.camera2api.MainActivity">\
+
+
+    <TextureView
+        android:id="@+id/texture"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Picture"
+        android:id="@+id/photolibrary"
+        android:src="@drawable/photolibrary"
+        android:onClick="opengallary"
+        android:layout_alignTop="@+id/picture"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="55dp" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Picture"
+        android:id="@+id/picture"
+        android:onClick="takepicture"
+        android:src="@drawable/camera"
+        android:layout_alignTop="@+id/close"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Picture"
+        android:id="@+id/close"
+        android:src="@drawable/close"
+        android:onClick="closecamera"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="60dp" />
+
+
+
+
+</RelativeLayout>
